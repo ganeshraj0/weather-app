@@ -69,13 +69,13 @@ const Weather = () => {
     <div className="weather place-self-center p-10 rounded-10 items-center flex flex-col w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
         <div className="flex items-center gap-[12px]">
         <input
-          ref={inputRef}
-          className="h-[50px] rounded-full border-none outline-none 
-          px-[25px] text-[#6262621] text-[18px]  bg-[#ebfffc]"
-          type="text"
-          placeholder="search"
-          onCanPlay={() => search(inputRef.current.value)}
-        />
+  ref={inputRef}
+  className="h-12 sm:h-14 rounded-full border-none outline-none 
+  px-6 text-gray-700 text-base sm:text-lg bg-[#ebfffc] w-full max-w-md"
+  type="text"
+  placeholder="Search"
+  onCanPlay={() => search(inputRef.current.value)}
+/>
         <img
           className="w-[50px] p-[15px] rounded-[50%] bg-[#ebfffc] cursor-pointer"
           src={search_icon}

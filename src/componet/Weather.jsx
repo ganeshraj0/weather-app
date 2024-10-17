@@ -66,8 +66,8 @@ const Weather = () => {
   }, []);
 
   return (
-    <div className="weather place-self-center p-10 rounded-10 items-center flex flex-col sm:p-20">
-      <div className="flex items-center gap-[12px]">
+    <div className="weather place-self-center p-10 rounded-10 items-center flex flex-col w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <div className="flex items-center gap-[12px]">
         <input
           ref={inputRef}
           className="h-[50px] rounded-full border-none outline-none 
